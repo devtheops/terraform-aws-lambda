@@ -1,0 +1,11 @@
+test:
+  image: "hashicorp/terraform:light"
+  only:
+    - merge_requests
+  stage: test
+  tags:
+    - linux
+    - docker
+    - tests
+  script:
+    - make test
