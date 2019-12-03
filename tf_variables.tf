@@ -46,7 +46,7 @@ variable "handler" {
 variable "env_vars" {
   description = "A map of the environment variables you wish to be on the function."
   type        = map(string)
-  default     = {}
+  default     = null
 }
 
 variable "vpc_config" {
